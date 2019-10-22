@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+void swap(int &x, int &y);
+int main()
+{
+	int x, y;
+	cout << "Enter two integers" << endl;
+	cin >> x >> y;
+	
+	swap(x, y);
+
+    return 0;
+}
+
+void swap(int &x, int &y)
+{
+	cout << "you entered x is:";
+	cout << x << endl;
+	cout << "you entered y is:";
+	cout << y << endl;
+
+	int temp = x; x = y; y = temp;
+
+
+	cout << "after swap value x is:";
+	cout << x << endl;
+	cout << "after swap value y is:";
+	cout << y << endl;
+
+
+}
